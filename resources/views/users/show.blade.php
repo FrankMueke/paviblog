@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="row mt-2">
-                    <div class="col-md-4 offset-4 col-xs-2">
+                    <div class="col-md-4 offset-4">
                         <h4 class="text-center heading">{{ $user->name }}</h4>
                         <h4 class="text-center heading"> {{ $user->email }} </h4>
                     </div>

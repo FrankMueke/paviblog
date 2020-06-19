@@ -3,16 +3,16 @@
 @section('title', '| ' .e($post->title))
 @section('content')
 
-<div class="row justify-content-center">
+<div class="row justify-content-center ">
     <div class="col-md-10 col-xs-3">
         <h1 class="ptitle-spacing-top ptitle-style">{{ $post->title }}</h1>
     <span> By<a href='{{ route('users.index', $post->user->id) }}'> {{$post->user->name}}</a> </span>
     On <span class="post-by">{{ date('M j, Y, h:ia', strtotime ($post->created_at)) }}</span><br>
     <img class="image-container-center single-page-image" src="{{ asset('images/'. $post->featured_image )}}"  alt="Image here">
-    
+
     <p class="font-frank-body">{!! $post->body !!}</p>
     <hr>
-   
+
     </div>
 </div>
 <div class="row justify-content-center">

@@ -6,8 +6,8 @@
 </head>
 <body>
     @include('partials._navbar')
-    <div class="container">
-       
+    <div class="container-fluid">
+
         @include('partials._messages')
 
         @yield('content')
