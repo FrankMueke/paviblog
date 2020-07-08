@@ -1,6 +1,6 @@
 @extends('main')
 @section('title', '|Register')
-
+@can('isAdmin')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -74,3 +74,4 @@
     </div>
 </div>
 @endsection
+@endcan

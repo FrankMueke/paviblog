@@ -23,7 +23,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('password/reset/{token?}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
     Route::get('/home', 'HomeController@index')->name('home');
 //profile
-Route::get('by/{id}', 'UserController@index')->name('users.index');
+Route::get('author/{id}', 'UserController@index')->name('users.index');
 Route::resource('users', 'UserController')->except('index');
 
 //posts
